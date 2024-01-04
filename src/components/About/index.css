@@ -1,0 +1,96 @@
+.about-section {
+}
+
+.about-section-left-right-cards-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-section__left-card {
+    width: 40%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10vw;
+}
+
+.about-section__left-card-role-text {
+    font-weight: bold;
+    color: #FDC435;
+    font-family: "Nunito";
+}
+
+.about-section__left-card-intro-text{
+    color: #25282B;
+    font-size: 50px;
+    font-family: "Playfair Display";
+}
+
+.about-section__left-card-description-text{
+    color: #828282;
+    font-family: "Nunito";
+}
+
+.about-section__left-card-btns-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-section__left-card-btns {
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-family: "Roboto";
+}
+
+.about-section-projects-btn{
+    background-color: #FDC435;
+    border: 2px solid #FDC435;
+}
+
+.about-section-linkedin-btn{
+    background-color: transparent;
+    color:#25282B;
+    border: 2px solid #25282B;
+}
+
+
+
+
+
+.about-section-right-card {
+    height: 60%;
+    /* width: 100%; */
+}
+
+.about-section__right-card-img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    
+    .about-section__left-card-role-text {
+        font-size: 14px;
+    }
+
+    .about-section__left-card-intro-text{
+        font-size: 40px;
+    }
+    
+    .about-section__left-card-description-text{
+        font-size: 14px;
+    }
+
+}
