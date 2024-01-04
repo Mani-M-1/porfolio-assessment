@@ -89,7 +89,7 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
 }
