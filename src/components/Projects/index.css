@@ -137,6 +137,7 @@
     font-family: "Roboto";
     outline: none;
     cursor: pointer;
+    background: transparent;
 }
 
 
