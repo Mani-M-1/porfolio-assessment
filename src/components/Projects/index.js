@@ -26,8 +26,6 @@ const projectsList = [
 
 const Projects = () => {
 
-    const navigate = useNavigate();
-
     const [form, setForm] = useState({title: '', description: '', imgUrl: ''})
 
 
@@ -45,9 +43,12 @@ const Projects = () => {
                     <h1 className='projects-list-section__project-item-title'>{title}</h1>
                     <p className='projects-list-section__project-item-description'>{description}</p>
 
-                    <button type='button' className='projects-list-section__project-item-view-project-btn' onClick={() => navigate(imgUrl)}>
+                    {/* <button type='button' className='projects-list-section__project-item-view-project-btn'>
                         View Project
-                    </button>
+                    </button> */}
+                    <a href={imgUrl} target="_blank" rel="noopener noreferrer" className='projects-list-section__project-item-view-project-btn'>
+                        View Project
+                    </a>
                 </div>
 
                 <img className={`${shiftOrderOfElements} projects-list-section__project-item-img`} src={imgUrl} alt="project img"/>
