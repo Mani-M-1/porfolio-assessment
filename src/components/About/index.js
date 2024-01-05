@@ -1,4 +1,5 @@
 import './index.css';
+import { Link  } from 'react-scroll';
 
 
 const About = () => {
@@ -12,9 +13,15 @@ const About = () => {
                     <p className='about-section__left-card-description-text'>Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
 
                     <div className='about-section__left-card-btns-wrapper'>
-                        <button type="button" className='about-section__left-card-btns about-section-projects-btn'>
+                        <Link 
+                            to="projects" spy={true} 
+                            smooth={true} 
+                            offset={0} 
+                            duration={500} 
+                            className='about-section__left-card-btns about-section-projects-btn'
+                        >
                             Projects 
-                        </button>
+                        </Link>
                         <button type="button" className='about-section__left-card-btns about-section-linkedin-btn'>
                             LinkedIn 
                         </button>
