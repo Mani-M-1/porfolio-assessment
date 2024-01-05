@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './index.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const projectsList = [
@@ -25,6 +26,8 @@ const projectsList = [
 
 const Projects = () => {
 
+    const navigate = useNavigate();
+
     const [form, setForm] = useState({title: '', description: '', imgUrl: ''})
 
 
@@ -42,7 +45,7 @@ const Projects = () => {
                     <h1 className='projects-list-section__project-item-title'>{title}</h1>
                     <p className='projects-list-section__project-item-description'>{description}</p>
 
-                    <button type='button' className='projects-list-section__project-item-view-project-btn'>
+                    <button type='button' className='projects-list-section__project-item-view-project-btn' onClick={() => navigate(imgUrl)}>
                         View Project
                     </button>
                 </div>
@@ -76,16 +79,17 @@ const Projects = () => {
             [event.target.name]: event.target.value
         })
     }
-
-
-
-
+    
+    
+    
+    
     return (
         <div id="projects" className='projects-section'>
             {/* add projects section  */}
             <div className='add-projects-section'>
                 <h1 className='add-projects-section__heading'>
                     Add Project 
+                    <hr className='add-projects-section__active-tab-styles'/>
                 </h1>
 
                 <form className='add-projects-section__form' onSubmit={handleOnclickSubmitBtn}>
@@ -119,6 +123,7 @@ const Projects = () => {
             <div className='projects-list-section'>
                 <h1 className='projects-list-section__heading'>
                     Projects 
+                    <hr className='projects-list-section__active-tab-styles'/>
                 </h1>
 
                 <ul className='projects-list-section__project-items-wrapper'>

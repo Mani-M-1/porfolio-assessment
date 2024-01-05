@@ -14,6 +14,16 @@
     margin-top: 20px;
     font-family: "Playfair Display";
     font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-projects-section__active-tab-styles {
+    margin-top: 5px;
+    border: 2px solid #FDC435;
+    border-radius: 10px;
+    width: 40%;
 }
 
 .add-projects-section__form {
@@ -75,6 +85,16 @@
 .projects-list-section__heading {
     font-size: 35px;
     font-family: "Playfair Display";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-list-section__active-tab-styles {
+    margin-top: 5px;
+    border: 2px solid #FDC435;
+    border-radius: 10px;
+    width: 50%;
 }
 
 .projects-list-section__project-items-wrapper {
